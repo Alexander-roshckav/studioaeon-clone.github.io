@@ -253,13 +253,13 @@ footer{
 }   
 
     @media(max-width: 766px){
-        .navbar{
+       /* .navbar{
             align-content: flex-start;
-           /* align-items: flex-start;*/
+            align-items: flex-start;
         }
         .logo{
             padding-left: 20px;
-        }
+        }*/
         .hero{
             display: flex;
             flex-direction: column;
