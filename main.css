@@ -260,6 +260,10 @@ footer{
         .logo{
             padding-left: 20px;
         }*/
+        .uppernav{
+        Position: fixed;
+        background-color: rgb(40,40,40);
+}
         .hero{
             display: flex;
             flex-direction: column;
