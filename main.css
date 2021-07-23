@@ -256,10 +256,11 @@ footer{
        /* .navbar{
             align-content: flex-start;
             align-items: flex-start;
-        }
-        .logo{
-            padding-left: 20px;
         }*/
+        
+        .logo{
+            posiiton: fixed;
+        }
         .uppernav{
         Position: fixed;
         top: 0;
