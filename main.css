@@ -65,6 +65,13 @@ a{
     width: 100%;
 }
 
+
+.uppernav{
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
 .search-box{
     position: fixed;
     top: 20px;
@@ -80,6 +87,64 @@ a{
 }
 
 
+#menuToggle {
+    overflow: hidden;
+   /* position: absolute;
+    /*width: 100%;
+    height: 100%;*/
+    display: flex;
+    flex-direction: column;
+ /*   justify-content: center;
+    align-items: center;*/
+  }
+
+  #menuToggle input {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; /* hide input */
+    z-index: 999; /* top of the menu */
+  }
+
+  #menuToggle span{
+    width: 20px;
+    height: 4px;
+    margin-bottom: 3px;
+    background: #d2deee;
+    border-radius: 2px;
+    -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  }
+
+  
+#span3 {
+    transform-origin: bottom right;
+  }
+  #span1 {
+    transform-origin: 2px 0px;
+  }
+  
+  #menuToggle input:checked ~ #span1 {
+    background-color: #d2deee;
+    transform: rotate(45deg) translate(4px);
+  }  
+  #menuToggle input:checked ~ #span2 {
+    background-color: #d2deee;
+    transform: rotate(495deg) translate(4px);   
+  }
+  
+  #menuToggle input:checked ~ #span3 {
+    background-color: #d2deee;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+
+/*
 #hamburger {
    overflow: hidden;
     display: flex;
@@ -100,7 +165,7 @@ a{
     margin-bottom: 3px;
     background: rgb(255,255,255);
     border-radius: 4px;
-}
+}*/
 
 /*=====HERO_SECTION====
 =======================*/
@@ -110,7 +175,8 @@ a{
 }
 
 .image{
-    width: 560px;
+   /* width: 560px;*/
+      width: 50%;
 }
 .hero{
     display: flex;
@@ -208,7 +274,7 @@ footer{
     .navbar{
         height: 132px;
     }
-
+/*
     #hamburger {
         overflow: hidden;
          display: flex;
@@ -225,8 +291,8 @@ footer{
         position: absolute;
         cursor: pointer;
         opacity: 0; /* hide input */
-        z-index: 1; /* top of the menu */
-     }
+   /*     z-index: 1; /* top of the menu */
+/*     }
        
      #hamburger span{
          width: 18px;
@@ -236,7 +302,7 @@ footer{
          background: rgb(255,255,255);
          border-radius: 1px;
      }
-
+*/
     .uppernav{
         width: 100%;
         padding-left: 15px;
